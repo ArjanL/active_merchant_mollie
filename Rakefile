@@ -11,7 +11,7 @@ begin
     gem.description = "ActiveMerchant extension to support the Dutch PSP Mollie with iDeal transactions"
     gem.authors = ["Edwin Vlieg"]
     gem.files =  FileList["[A-Z]*", "{bin,generators,lib,test}/**/*"]
-    gem.add_dependency 'active_merchant'
+    gem.add_dependency 'activemerchant'
     gem.add_dependency 'hpricot'
   end
   Jeweler::GemcutterTasks.new
