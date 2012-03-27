@@ -36,9 +36,9 @@ module ActiveMerchant
       def commit(action, parameters)
         # url = URL + "?" + post_data(action, parameters)
         # RAILS_DEFAULT_LOGGER.debug "MollieIdealGateway#commit POST url: #{url}"
-        RAILS_DEFAULT_LOGGER.debug "MollieIdealGateway#commit POST action: #{action} parameters: #{parameters.inspect}"
+        Rails.logger.debug "MollieIdealGateway#commit POST action: #{action} parameters: #{parameters.inspect}"
         xml = ssl_post(URL, post_data(action, parameters))
-        RAILS_DEFAULT_LOGGER.debug "MollieIdealGateway#commit response XML: #{xml}"
+        Rails.logger.debug "MollieIdealGateway#commit response XML: #{xml}"
         parse(xml)
       end
 
