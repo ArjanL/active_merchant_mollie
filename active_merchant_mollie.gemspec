@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/active_merchant/billing/mollie_ideal.rb",
-     "lib/active_merchant/billing/mollie_ideal_check_response.rb",
-     "lib/active_merchant/billing/mollie_ideal_fetch_response.rb",
+     "lib/active_merchant/billing/mollie_ideal_details_response.rb",
+     "lib/active_merchant/billing/mollie_ideal_purchase_response.rb",
      "lib/active_merchant_mollie.rb"
   ]
   s.homepage = %q{http://github.com/bluetools/active_merchant_mollie}
