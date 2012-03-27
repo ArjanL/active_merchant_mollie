@@ -3,7 +3,7 @@ module ActiveMerchant #:nodoc:
     class MollieIdealPurchaseResponse < Response
     
       def token
-        @params['token]
+        @params['token']
       end
       
       def amount
